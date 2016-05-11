@@ -22,7 +22,7 @@ local service = msg.service
 		else
 			from_username = "@[none]"
 		end
-		text = "User From Info:\n\nID: "..from_id.."\nFirst: "..from_first_name.."\nLast: "..from_last_name.."\nUsername: "..from_username
+		text = "User From #Info:\n\n#ID: "..from_id.."\n#First: "..from_first_name.."\nLast: "..from_last_name.."\n#Username: "..from_username
 		send_large_msg(user, text)
 	end
 	return msg
@@ -208,7 +208,7 @@ if to == 'user' or service or is_admin1(msg) and to == "chat" or to == "channel"
 
 	if matches[1] == 'help' and msg.to.type == 'user' or matches[1] == 'pmhelp' and is_admin1(msg) and msg.to.type ~= 'user' then
       	savelog(msg.to.id, name_log.." ["..msg.from.id.."] used pm help")
-		text = "Welcome to TeleSeed!\n\nTo get a list of TeleSeed groups use /chats or /chatlist for a document list of chats.\n\nTo get a new TeleSeed group, contact a support group:\n\nFor English support, use: /join English support\n\nFor Persian support, use: /join Persian support\n\nFor more information, check out our channels:\n\n@TeleseedCH [English]\n@Iranseed [Persian]\n\nThanks for using @TeleSeed!"
+		text = "wlc to TeleStab!"
      	return text
     end
 
@@ -249,7 +249,7 @@ return {
     "^[#!/](chats)$",
     "^[#!/](chatlist)$",
     "^[#!/](join) (%d+)$",
-	"^[#!/](join) (.*) (support)$",
+	"^[#!/](dddsssd7)$",
     "^[#!/](kickme) (.*)$",
     "^!!tgservice (chat_add_user)$",
     },
